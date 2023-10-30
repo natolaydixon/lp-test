@@ -11,7 +11,7 @@ const jsonInfo = [
   for (const data of jsonInfo) {
     const utmTag = data.utm_tag;
     const currentUrl = window.location.href;
-
+console.log(currentUrl)
   
     if (currentUrl.includes(utmTag)) {
       const element = document.querySelector(data.selector);
